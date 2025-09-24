@@ -2,5 +2,5 @@ import java.util.List;
 
 public class ApiResponse {
     public int response_code;
-    public List<String> results;
+    public List<ApiQuestion> results;
 }
