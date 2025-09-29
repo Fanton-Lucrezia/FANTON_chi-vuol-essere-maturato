@@ -30,7 +30,7 @@ public class ApiClient {
         ApiResponse apiResponse = gson.fromJson(response.body(), ApiResponse.class);
         for (ApiQuestion q : apiResponse.results){
             System.out.println(q.question);
-            System.out.println(q.correct_answer);
+            System.out.println("Risposta corretta: " + q.correct_answer);
         }
         return response.body();
     }
